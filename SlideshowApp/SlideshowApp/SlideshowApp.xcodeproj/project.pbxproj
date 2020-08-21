@@ -7,27 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E5DE17B424EFAFEC00A6DEF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE17B324EFAFEC00A6DEF5 /* AppDelegate.swift */; };
-		E5DE17B624EFAFEC00A6DEF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE17B524EFAFEC00A6DEF5 /* SceneDelegate.swift */; };
-		E5DE17B824EFAFEC00A6DEF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE17B724EFAFEC00A6DEF5 /* ViewController.swift */; };
-		E5DE17BB24EFAFEC00A6DEF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5DE17B924EFAFEC00A6DEF5 /* Main.storyboard */; };
-		E5DE17BD24EFAFEE00A6DEF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5DE17BC24EFAFEE00A6DEF5 /* Assets.xcassets */; };
-		E5DE17C024EFAFEE00A6DEF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5DE17BE24EFAFEE00A6DEF5 /* LaunchScreen.storyboard */; };
+		E5DE180324EFB76C00A6DEF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE180224EFB76C00A6DEF5 /* AppDelegate.swift */; };
+		E5DE180524EFB76C00A6DEF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE180424EFB76C00A6DEF5 /* SceneDelegate.swift */; };
+		E5DE180724EFB76C00A6DEF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE180624EFB76C00A6DEF5 /* ViewController.swift */; };
+		E5DE180A24EFB76C00A6DEF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5DE180824EFB76C00A6DEF5 /* Main.storyboard */; };
+		E5DE180C24EFB76D00A6DEF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5DE180B24EFB76D00A6DEF5 /* Assets.xcassets */; };
+		E5DE180F24EFB76D00A6DEF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5DE180D24EFB76D00A6DEF5 /* LaunchScreen.storyboard */; };
+		E5DE181A24EFB7A000A6DEF5 /* sea-2730871_1920.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5DE181724EFB7A000A6DEF5 /* sea-2730871_1920.jpg */; };
+		E5DE181B24EFB7A000A6DEF5 /* flowers-21708_1920.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5DE181824EFB7A000A6DEF5 /* flowers-21708_1920.jpg */; };
+		E5DE181C24EFB7A000A6DEF5 /* woman-5347089_1920.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5DE181924EFB7A000A6DEF5 /* woman-5347089_1920.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E5DE17B024EFAFEC00A6DEF5 /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5DE17B324EFAFEC00A6DEF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E5DE17B524EFAFEC00A6DEF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E5DE17B724EFAFEC00A6DEF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E5DE17BA24EFAFEC00A6DEF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E5DE17BC24EFAFEE00A6DEF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E5DE17BF24EFAFEE00A6DEF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E5DE17C124EFAFEE00A6DEF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5DE17FF24EFB76C00A6DEF5 /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5DE180224EFB76C00A6DEF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E5DE180424EFB76C00A6DEF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E5DE180624EFB76C00A6DEF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E5DE180924EFB76C00A6DEF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E5DE180B24EFB76D00A6DEF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5DE180E24EFB76D00A6DEF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E5DE181024EFB76D00A6DEF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5DE181724EFB7A000A6DEF5 /* sea-2730871_1920.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sea-2730871_1920.jpg"; sourceTree = "<group>"; };
+		E5DE181824EFB7A000A6DEF5 /* flowers-21708_1920.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "flowers-21708_1920.jpg"; sourceTree = "<group>"; };
+		E5DE181924EFB7A000A6DEF5 /* woman-5347089_1920.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "woman-5347089_1920.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E5DE17AD24EFAFEC00A6DEF5 /* Frameworks */ = {
+		E5DE17FC24EFB76C00A6DEF5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,46 +43,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E5DE17A724EFAFEC00A6DEF5 = {
+		E5DE17F624EFB76C00A6DEF5 = {
 			isa = PBXGroup;
 			children = (
-				E5DE17B224EFAFEC00A6DEF5 /* SlideshowApp */,
-				E5DE17B124EFAFEC00A6DEF5 /* Products */,
+				E5DE180124EFB76C00A6DEF5 /* SlideshowApp */,
+				E5DE180024EFB76C00A6DEF5 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E5DE17B124EFAFEC00A6DEF5 /* Products */ = {
+		E5DE180024EFB76C00A6DEF5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E5DE17B024EFAFEC00A6DEF5 /* SlideshowApp.app */,
+				E5DE17FF24EFB76C00A6DEF5 /* SlideshowApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E5DE17B224EFAFEC00A6DEF5 /* SlideshowApp */ = {
+		E5DE180124EFB76C00A6DEF5 /* SlideshowApp */ = {
 			isa = PBXGroup;
 			children = (
-				E5DE17B324EFAFEC00A6DEF5 /* AppDelegate.swift */,
-				E5DE17B524EFAFEC00A6DEF5 /* SceneDelegate.swift */,
-				E5DE17B724EFAFEC00A6DEF5 /* ViewController.swift */,
-				E5DE17B924EFAFEC00A6DEF5 /* Main.storyboard */,
-				E5DE17BC24EFAFEE00A6DEF5 /* Assets.xcassets */,
-				E5DE17BE24EFAFEE00A6DEF5 /* LaunchScreen.storyboard */,
-				E5DE17C124EFAFEE00A6DEF5 /* Info.plist */,
+				E5DE181624EFB79000A6DEF5 /* Photo */,
+				E5DE180224EFB76C00A6DEF5 /* AppDelegate.swift */,
+				E5DE180424EFB76C00A6DEF5 /* SceneDelegate.swift */,
+				E5DE180624EFB76C00A6DEF5 /* ViewController.swift */,
+				E5DE180824EFB76C00A6DEF5 /* Main.storyboard */,
+				E5DE180B24EFB76D00A6DEF5 /* Assets.xcassets */,
+				E5DE180D24EFB76D00A6DEF5 /* LaunchScreen.storyboard */,
+				E5DE181024EFB76D00A6DEF5 /* Info.plist */,
 			);
 			path = SlideshowApp;
+			sourceTree = "<group>";
+		};
+		E5DE181624EFB79000A6DEF5 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				E5DE181824EFB7A000A6DEF5 /* flowers-21708_1920.jpg */,
+				E5DE181724EFB7A000A6DEF5 /* sea-2730871_1920.jpg */,
+				E5DE181924EFB7A000A6DEF5 /* woman-5347089_1920.jpg */,
+			);
+			path = Photo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E5DE17AF24EFAFEC00A6DEF5 /* SlideshowApp */ = {
+		E5DE17FE24EFB76C00A6DEF5 /* SlideshowApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E5DE17C424EFAFEE00A6DEF5 /* Build configuration list for PBXNativeTarget "SlideshowApp" */;
+			buildConfigurationList = E5DE181324EFB76D00A6DEF5 /* Build configuration list for PBXNativeTarget "SlideshowApp" */;
 			buildPhases = (
-				E5DE17AC24EFAFEC00A6DEF5 /* Sources */,
-				E5DE17AD24EFAFEC00A6DEF5 /* Frameworks */,
-				E5DE17AE24EFAFEC00A6DEF5 /* Resources */,
+				E5DE17FB24EFB76C00A6DEF5 /* Sources */,
+				E5DE17FC24EFB76C00A6DEF5 /* Frameworks */,
+				E5DE17FD24EFB76C00A6DEF5 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +101,25 @@
 			);
 			name = SlideshowApp;
 			productName = SlideshowApp;
-			productReference = E5DE17B024EFAFEC00A6DEF5 /* SlideshowApp.app */;
+			productReference = E5DE17FF24EFB76C00A6DEF5 /* SlideshowApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E5DE17A824EFAFEC00A6DEF5 /* Project object */ = {
+		E5DE17F724EFB76C00A6DEF5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = daichi.morishita;
 				TargetAttributes = {
-					E5DE17AF24EFAFEC00A6DEF5 = {
+					E5DE17FE24EFB76C00A6DEF5 = {
 						CreatedOnToolsVersion = 11.6;
 					};
 				};
 			};
-			buildConfigurationList = E5DE17AB24EFAFEC00A6DEF5 /* Build configuration list for PBXProject "SlideshowApp" */;
+			buildConfigurationList = E5DE17FA24EFB76C00A6DEF5 /* Build configuration list for PBXProject "SlideshowApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +127,58 @@
 				en,
 				Base,
 			);
-			mainGroup = E5DE17A724EFAFEC00A6DEF5;
-			productRefGroup = E5DE17B124EFAFEC00A6DEF5 /* Products */;
+			mainGroup = E5DE17F624EFB76C00A6DEF5;
+			productRefGroup = E5DE180024EFB76C00A6DEF5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E5DE17AF24EFAFEC00A6DEF5 /* SlideshowApp */,
+				E5DE17FE24EFB76C00A6DEF5 /* SlideshowApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E5DE17AE24EFAFEC00A6DEF5 /* Resources */ = {
+		E5DE17FD24EFB76C00A6DEF5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5DE17C024EFAFEE00A6DEF5 /* LaunchScreen.storyboard in Resources */,
-				E5DE17BD24EFAFEE00A6DEF5 /* Assets.xcassets in Resources */,
-				E5DE17BB24EFAFEC00A6DEF5 /* Main.storyboard in Resources */,
+				E5DE181A24EFB7A000A6DEF5 /* sea-2730871_1920.jpg in Resources */,
+				E5DE181C24EFB7A000A6DEF5 /* woman-5347089_1920.jpg in Resources */,
+				E5DE180F24EFB76D00A6DEF5 /* LaunchScreen.storyboard in Resources */,
+				E5DE180C24EFB76D00A6DEF5 /* Assets.xcassets in Resources */,
+				E5DE180A24EFB76C00A6DEF5 /* Main.storyboard in Resources */,
+				E5DE181B24EFB7A000A6DEF5 /* flowers-21708_1920.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E5DE17AC24EFAFEC00A6DEF5 /* Sources */ = {
+		E5DE17FB24EFB76C00A6DEF5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5DE17B824EFAFEC00A6DEF5 /* ViewController.swift in Sources */,
-				E5DE17B424EFAFEC00A6DEF5 /* AppDelegate.swift in Sources */,
-				E5DE17B624EFAFEC00A6DEF5 /* SceneDelegate.swift in Sources */,
+				E5DE180724EFB76C00A6DEF5 /* ViewController.swift in Sources */,
+				E5DE180324EFB76C00A6DEF5 /* AppDelegate.swift in Sources */,
+				E5DE180524EFB76C00A6DEF5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E5DE17B924EFAFEC00A6DEF5 /* Main.storyboard */ = {
+		E5DE180824EFB76C00A6DEF5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E5DE17BA24EFAFEC00A6DEF5 /* Base */,
+				E5DE180924EFB76C00A6DEF5 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		E5DE17BE24EFAFEE00A6DEF5 /* LaunchScreen.storyboard */ = {
+		E5DE180D24EFB76D00A6DEF5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E5DE17BF24EFAFEE00A6DEF5 /* Base */,
+				E5DE180E24EFB76D00A6DEF5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +186,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E5DE17C224EFAFEE00A6DEF5 /* Debug */ = {
+		E5DE181124EFB76D00A6DEF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +246,7 @@
 			};
 			name = Debug;
 		};
-		E5DE17C324EFAFEE00A6DEF5 /* Release */ = {
+		E5DE181224EFB76D00A6DEF5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,7 +300,7 @@
 			};
 			name = Release;
 		};
-		E5DE17C524EFAFEE00A6DEF5 /* Debug */ = {
+		E5DE181424EFB76D00A6DEF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -298,7 +318,7 @@
 			};
 			name = Debug;
 		};
-		E5DE17C624EFAFEE00A6DEF5 /* Release */ = {
+		E5DE181524EFB76D00A6DEF5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -319,25 +339,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E5DE17AB24EFAFEC00A6DEF5 /* Build configuration list for PBXProject "SlideshowApp" */ = {
+		E5DE17FA24EFB76C00A6DEF5 /* Build configuration list for PBXProject "SlideshowApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E5DE17C224EFAFEE00A6DEF5 /* Debug */,
-				E5DE17C324EFAFEE00A6DEF5 /* Release */,
+				E5DE181124EFB76D00A6DEF5 /* Debug */,
+				E5DE181224EFB76D00A6DEF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E5DE17C424EFAFEE00A6DEF5 /* Build configuration list for PBXNativeTarget "SlideshowApp" */ = {
+		E5DE181324EFB76D00A6DEF5 /* Build configuration list for PBXNativeTarget "SlideshowApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E5DE17C524EFAFEE00A6DEF5 /* Debug */,
-				E5DE17C624EFAFEE00A6DEF5 /* Release */,
+				E5DE181424EFB76D00A6DEF5 /* Debug */,
+				E5DE181524EFB76D00A6DEF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E5DE17A824EFAFEC00A6DEF5 /* Project object */;
+	rootObject = E5DE17F724EFB76C00A6DEF5 /* Project object */;
 }
