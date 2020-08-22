@@ -11,17 +11,13 @@ import UIKit
 class photoViewController: UIViewController {
 
     
-    let image1:UIImage = UIImage(named:"flowers-21708_1920.jpg")!
-       let image2:UIImage = UIImage(named:"sea-2730871_1920.jpg")!
-       let image3:UIImage = UIImage(named: "woman-5347089_1920.jpg")!
-     
-       var images: [UIImage] = []
+   
     
     @IBOutlet weak var bigphoto: UIImageView!
     
      var selectedImage :UIImage!
     
-     var x:Int = 0
+   
     
     
 
@@ -29,7 +25,7 @@ class photoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         images = [image1, image2, image3]
+        
 
         
         bigphoto.image = self.selectedImage

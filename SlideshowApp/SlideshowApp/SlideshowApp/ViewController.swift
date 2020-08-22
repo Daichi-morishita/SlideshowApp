@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         
         slideshow.isUserInteractionEnabled = true
         
-    }
+       }
     //タップ時の処理
     @IBAction func tap(_ sender: Any) {
         
@@ -65,6 +65,7 @@ class ViewController: UIViewController {
     
    
     //ボタン系
+    @IBOutlet weak var nextButton: UIButton!
     @IBAction func nextButton(_ sender: Any) {
         index += 1
         if index >= images.count{
@@ -73,6 +74,7 @@ class ViewController: UIViewController {
         slideshow.image = images[index]
     }
     
+    @IBOutlet weak var backButton: UIButton!
     @IBAction func backButton(_ sender: Any) {
         index -= 1
         if index < 0{
@@ -82,12 +84,27 @@ class ViewController: UIViewController {
     }
     
     
+    @IBOutlet weak var startstopButton: UIButton!
     @IBAction func startstopButton(_ sender: Any) {
         
         if self.timer == nil {
+             startstopButton.setTitle("停止", for: .normal)//再生ボタンの追加
             self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
+            
+            //ボタンの使用不可
+            nextButton.isEnabled = false
+            backButton.isEnabled = false
+            
         }else{self.timer.invalidate()   // タイマーを停止する
-            self.timer = nil }
+            self.timer = nil
+            startstopButton.setTitle("再生", for: .normal)//停止ボタン
+            
+            //ボタンの使用可能
+            nextButton.isEnabled = true
+            backButton.isEnabled = true
+            
+
+        }
     }
     
     

@@ -16,12 +16,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAG-RG-AFd">
-                                <rect key="frame" x="157" y="635" width="132" height="48"/>
+                                <rect key="frame" x="193" y="635" width="61" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="再生/停止"/>
+                                <state key="normal" title="再生"/>
                                 <connections>
-                                    <action selector="startstopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rh0-68-wlK"/>
+                                    <action selector="startstopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o3j-fZ-2AG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycd-QN-CrS">
@@ -60,7 +60,10 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="ycd-QN-CrS" id="8Ue-k1-p5a"/>
+                        <outlet property="nextButton" destination="3NP-1D-1sF" id="X2Y-WZ-qRR"/>
                         <outlet property="slideshow" destination="KbP-0L-TOg" id="dSN-Ph-y8w"/>
+                        <outlet property="startstopButton" destination="cAG-RG-AFd" id="fOb-HK-YM8"/>
                         <segue destination="Adr-ZK-9Mr" kind="presentation" identifier="NextSegue" id="nOH-sH-ajV"/>
                     </connections>
                 </viewController>
