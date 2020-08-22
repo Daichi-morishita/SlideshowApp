@@ -16,6 +16,7 @@
 		E5DE181A24EFB7A000A6DEF5 /* sea-2730871_1920.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5DE181724EFB7A000A6DEF5 /* sea-2730871_1920.jpg */; };
 		E5DE181B24EFB7A000A6DEF5 /* flowers-21708_1920.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5DE181824EFB7A000A6DEF5 /* flowers-21708_1920.jpg */; };
 		E5DE181C24EFB7A000A6DEF5 /* woman-5347089_1920.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5DE181924EFB7A000A6DEF5 /* woman-5347089_1920.jpg */; };
+		E5DE181E24EFC8B800A6DEF5 /* photoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DE181D24EFC8B800A6DEF5 /* photoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E5DE181724EFB7A000A6DEF5 /* sea-2730871_1920.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sea-2730871_1920.jpg"; sourceTree = "<group>"; };
 		E5DE181824EFB7A000A6DEF5 /* flowers-21708_1920.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "flowers-21708_1920.jpg"; sourceTree = "<group>"; };
 		E5DE181924EFB7A000A6DEF5 /* woman-5347089_1920.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "woman-5347089_1920.jpg"; sourceTree = "<group>"; };
+		E5DE181D24EFC8B800A6DEF5 /* photoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,14 +64,15 @@
 		E5DE180124EFB76C00A6DEF5 /* SlideshowApp */ = {
 			isa = PBXGroup;
 			children = (
-				E5DE181624EFB79000A6DEF5 /* Photo */,
-				E5DE180224EFB76C00A6DEF5 /* AppDelegate.swift */,
-				E5DE180424EFB76C00A6DEF5 /* SceneDelegate.swift */,
 				E5DE180624EFB76C00A6DEF5 /* ViewController.swift */,
+				E5DE181D24EFC8B800A6DEF5 /* photoViewController.swift */,
 				E5DE180824EFB76C00A6DEF5 /* Main.storyboard */,
+				E5DE181624EFB79000A6DEF5 /* Photo */,
+				E5DE180424EFB76C00A6DEF5 /* SceneDelegate.swift */,
 				E5DE180B24EFB76D00A6DEF5 /* Assets.xcassets */,
 				E5DE180D24EFB76D00A6DEF5 /* LaunchScreen.storyboard */,
 				E5DE181024EFB76D00A6DEF5 /* Info.plist */,
+				E5DE180224EFB76C00A6DEF5 /* AppDelegate.swift */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5DE180724EFB76C00A6DEF5 /* ViewController.swift in Sources */,
+				E5DE181E24EFC8B800A6DEF5 /* photoViewController.swift in Sources */,
 				E5DE180324EFB76C00A6DEF5 /* AppDelegate.swift in Sources */,
 				E5DE180524EFB76C00A6DEF5 /* SceneDelegate.swift in Sources */,
 			);

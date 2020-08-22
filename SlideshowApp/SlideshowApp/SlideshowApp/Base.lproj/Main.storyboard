@@ -15,15 +15,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flowers-21708_1920.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KbP-0L-TOg">
-                                <rect key="frame" x="42" y="167" width="307" height="342"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAG-RG-AFd">
-                                <rect key="frame" x="180" y="635" width="86" height="48"/>
+                                <rect key="frame" x="157" y="635" width="132" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="再生/停止"/>
+                                <connections>
+                                    <action selector="startstopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rh0-68-wlK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycd-QN-CrS">
                                 <rect key="frame" x="55" y="747" width="61" height="48"/>
@@ -43,32 +42,70 @@
                                     <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w34-nF-e5q"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flowers-21708_1920.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KbP-0L-TOg">
+                                <rect key="frame" x="60" y="211" width="294" height="342"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="BcI-W8-A36" appends="YES" id="IXQ-HR-C5R"/>
+                                    <outletCollection property="gestureRecognizers" destination="BcI-W8-A36" appends="YES" id="100-MM-jPV"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="BcI-W8-A36" appends="YES" id="lTs-35-N4Z"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="slideshow" destination="KbP-0L-TOg" id="dSN-Ph-y8w"/>
+                        <segue destination="Adr-ZK-9Mr" kind="presentation" identifier="NextSegue" id="nOH-sH-ajV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="BcI-W8-A36">
+                    <connections>
+                        <action selector="tap:" destination="BYZ-38-t0r" id="qVA-jD-Zsz"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Photo View Controller-->
         <scene sceneID="p4I-Q6-4vM">
             <objects>
-                <viewController id="Adr-ZK-9Mr" sceneMemberID="viewController">
+                <viewController id="Adr-ZK-9Mr" customClass="photoViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xug-W9-HnF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAJ-B0-gT3">
+                                <rect key="frame" x="183" y="17" width="61" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="Dlg-On-IZ3" kind="unwind" unwindAction="unwind:" id="HRB-Q6-PwD"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RgX-QA-ytg">
+                                <rect key="frame" x="4" y="73" width="410" height="712"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="GSG-HY-oTw"/>
                     </view>
+                    <connections>
+                        <outlet property="bigphoto" destination="RgX-QA-ytg" id="fKr-6c-MQW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mvr-kL-VlH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Dlg-On-IZ3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="812" y="113"/>
+            <point key="canvasLocation" x="1031.8840579710145" y="115.84821428571428"/>
         </scene>
     </scenes>
     <resources>
