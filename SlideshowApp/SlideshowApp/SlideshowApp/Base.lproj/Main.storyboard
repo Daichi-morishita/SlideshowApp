@@ -15,45 +15,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAG-RG-AFd">
-                                <rect key="frame" x="193" y="635" width="61" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="再生"/>
-                                <connections>
-                                    <action selector="startstopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o3j-fZ-2AG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycd-QN-CrS">
-                                <rect key="frame" x="55" y="747" width="61" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycd-QN-CrS">
+                                <rect key="frame" x="0.0" y="670" width="61" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <action selector="backButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sLY-D3-2mA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3NP-1D-1sF">
-                                <rect key="frame" x="276" y="747" width="61" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAG-RG-AFd">
+                                <rect key="frame" x="176.5" y="670" width="61" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="再生"/>
+                                <connections>
+                                    <action selector="startstopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o3j-fZ-2AG"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flowers-21708_1920.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KbP-0L-TOg">
+                                <rect key="frame" x="60" y="44" width="294" height="428"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="428" id="p0l-XZ-9rn"/>
+                                    <constraint firstAttribute="width" constant="294" id="scP-yG-XDT"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="BcI-W8-A36" appends="YES" id="IXQ-HR-C5R"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3NP-1D-1sF">
+                                <rect key="frame" x="353" y="670" width="61" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="進む"/>
                                 <connections>
                                     <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w34-nF-e5q"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flowers-21708_1920.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KbP-0L-TOg">
-                                <rect key="frame" x="60" y="211" width="294" height="342"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="BcI-W8-A36" appends="YES" id="IXQ-HR-C5R"/>
-                                    <outletCollection property="gestureRecognizers" destination="BcI-W8-A36" appends="YES" id="100-MM-jPV"/>
-                                </connections>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KbP-0L-TOg" secondAttribute="trailing" constant="60" id="14f-mw-jh9"/>
+                            <constraint firstItem="3NP-1D-1sF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9bK-n4-EZE"/>
+                            <constraint firstItem="ycd-QN-CrS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FQW-be-DLd"/>
+                            <constraint firstItem="3NP-1D-1sF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HDj-5x-GJh"/>
+                            <constraint firstItem="ycd-QN-CrS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HeU-ar-Dlp"/>
+                            <constraint firstItem="ycd-QN-CrS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LaM-Rc-LAH"/>
+                            <constraint firstItem="3NP-1D-1sF" firstAttribute="bottom" secondItem="ycd-QN-CrS" secondAttribute="bottom" constant="20" id="Nr6-oM-3EE"/>
+                            <constraint firstItem="3NP-1D-1sF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QtJ-XY-eNO"/>
+                            <constraint firstItem="ycd-QN-CrS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Zsh-Fe-kby"/>
+                            <constraint firstItem="KbP-0L-TOg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bH1-dS-gQ3"/>
+                            <constraint firstItem="cAG-RG-AFd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dus-YQ-CQS"/>
+                            <constraint firstItem="3NP-1D-1sF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g1Y-ik-kbI"/>
+                            <constraint firstItem="cAG-RG-AFd" firstAttribute="top" secondItem="KbP-0L-TOg" secondAttribute="bottom" constant="198" id="kh4-qB-kbY"/>
+                            <constraint firstItem="KbP-0L-TOg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="mU5-2P-kDM"/>
+                            <constraint firstItem="KbP-0L-TOg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qEl-4j-zOW"/>
+                            <constraint firstItem="3NP-1D-1sF" firstAttribute="centerY" secondItem="ycd-QN-CrS" secondAttribute="centerY" id="srw-RW-zQa"/>
+                            <constraint firstItem="ycd-QN-CrS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="u5z-th-0R4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="BcI-W8-A36" appends="YES" id="lTs-35-N4Z"/>
@@ -84,21 +102,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAJ-B0-gT3">
-                                <rect key="frame" x="183" y="17" width="61" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAJ-B0-gT3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="戻る"/>
+                                <state key="normal" title="戻る">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <segue destination="Dlg-On-IZ3" kind="unwind" unwindAction="unwind:" id="HRB-Q6-PwD"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RgX-QA-ytg">
-                                <rect key="frame" x="4" y="73" width="410" height="712"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RgX-QA-ytg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="RgX-QA-ytg" secondAttribute="bottom" id="4Hk-Q9-myv"/>
+                            <constraint firstItem="RgX-QA-ytg" firstAttribute="top" secondItem="GSG-HY-oTw" secondAttribute="top" id="4Q6-uz-yEO"/>
+                            <constraint firstItem="MAJ-B0-gT3" firstAttribute="centerX" secondItem="xug-W9-HnF" secondAttribute="centerX" id="9UJ-Dh-ukJ"/>
+                            <constraint firstItem="RgX-QA-ytg" firstAttribute="leading" secondItem="xug-W9-HnF" secondAttribute="leading" id="iax-dL-bbP"/>
+                            <constraint firstItem="RgX-QA-ytg" firstAttribute="trailing" secondItem="GSG-HY-oTw" secondAttribute="trailing" id="oEw-y6-r6A"/>
+                            <constraint firstItem="MAJ-B0-gT3" firstAttribute="top" secondItem="GSG-HY-oTw" secondAttribute="top" constant="17" id="rw9-iu-jGw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="GSG-HY-oTw"/>
                     </view>
                     <connections>

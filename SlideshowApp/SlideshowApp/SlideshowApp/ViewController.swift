@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     @IBAction func tap(_ sender: Any) {
         
         self.performSegue(withIdentifier: "NextSegue", sender: nil)
-               
+        
     }
     @objc  func tapped(_ sender: UITapGestureRecognizer){
         
