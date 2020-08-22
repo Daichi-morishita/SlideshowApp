@@ -15,12 +15,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycd-QN-CrS">
-                                <rect key="frame" x="0.0" y="670" width="61" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3NP-1D-1sF">
+                                <rect key="frame" x="353" y="670" width="61" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="6Md-qN-8U7"/>
+                                    <constraint firstAttribute="width" constant="61" id="qxL-We-NSV"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="戻る"/>
+                                <state key="normal" title="進む"/>
                                 <connections>
-                                    <action selector="backButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sLY-D3-2mA"/>
+                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w34-nF-e5q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAG-RG-AFd">
@@ -42,12 +46,16 @@
                                     <outletCollection property="gestureRecognizers" destination="BcI-W8-A36" appends="YES" id="IXQ-HR-C5R"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3NP-1D-1sF">
-                                <rect key="frame" x="353" y="670" width="61" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycd-QN-CrS">
+                                <rect key="frame" x="0.0" y="670" width="61" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="EHb-g4-2p1"/>
+                                    <constraint firstAttribute="height" constant="48" id="owM-E6-PaX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="進む"/>
+                                <state key="normal" title="戻る"/>
                                 <connections>
-                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w34-nF-e5q"/>
+                                    <action selector="backButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sLY-D3-2mA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -55,22 +63,19 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KbP-0L-TOg" secondAttribute="trailing" constant="60" id="14f-mw-jh9"/>
-                            <constraint firstItem="3NP-1D-1sF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9bK-n4-EZE"/>
-                            <constraint firstItem="ycd-QN-CrS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FQW-be-DLd"/>
-                            <constraint firstItem="3NP-1D-1sF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HDj-5x-GJh"/>
-                            <constraint firstItem="ycd-QN-CrS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HeU-ar-Dlp"/>
-                            <constraint firstItem="ycd-QN-CrS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LaM-Rc-LAH"/>
-                            <constraint firstItem="3NP-1D-1sF" firstAttribute="bottom" secondItem="ycd-QN-CrS" secondAttribute="bottom" constant="20" id="Nr6-oM-3EE"/>
-                            <constraint firstItem="3NP-1D-1sF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QtJ-XY-eNO"/>
-                            <constraint firstItem="ycd-QN-CrS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Zsh-Fe-kby"/>
+                            <constraint firstItem="3NP-1D-1sF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="626" id="EaA-aF-gI2"/>
+                            <constraint firstItem="ycd-QN-CrS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="626" id="MoA-BH-Od8"/>
+                            <constraint firstItem="ycd-QN-CrS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QeF-D8-rrR"/>
                             <constraint firstItem="KbP-0L-TOg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bH1-dS-gQ3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ycd-QN-CrS" secondAttribute="bottom" constant="144" id="cYU-tx-2Rt"/>
                             <constraint firstItem="cAG-RG-AFd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dus-YQ-CQS"/>
-                            <constraint firstItem="3NP-1D-1sF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g1Y-ik-kbI"/>
+                            <constraint firstItem="3NP-1D-1sF" firstAttribute="leading" secondItem="cAG-RG-AFd" secondAttribute="trailing" constant="115.5" id="hyY-ca-s7Q"/>
+                            <constraint firstItem="3NP-1D-1sF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="irJ-Ul-1EN"/>
                             <constraint firstItem="cAG-RG-AFd" firstAttribute="top" secondItem="KbP-0L-TOg" secondAttribute="bottom" constant="198" id="kh4-qB-kbY"/>
                             <constraint firstItem="KbP-0L-TOg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="mU5-2P-kDM"/>
                             <constraint firstItem="KbP-0L-TOg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qEl-4j-zOW"/>
-                            <constraint firstItem="3NP-1D-1sF" firstAttribute="centerY" secondItem="ycd-QN-CrS" secondAttribute="centerY" id="srw-RW-zQa"/>
-                            <constraint firstItem="ycd-QN-CrS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="u5z-th-0R4"/>
+                            <constraint firstItem="cAG-RG-AFd" firstAttribute="leading" secondItem="ycd-QN-CrS" secondAttribute="trailing" constant="115.5" id="rlM-N7-bBo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3NP-1D-1sF" secondAttribute="bottom" constant="144" id="y9W-Fm-qYU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
