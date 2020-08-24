@@ -39,7 +39,12 @@ class ViewController: UIViewController {
         
         self.performSegue(withIdentifier: "NextSegue", sender: nil)
         
-    }
+        if self.timer != nil {
+        self.timer.invalidate()   // タイマーを停止する
+        
+        }
+            
+        }
     @objc  func tapped(_ sender: UITapGestureRecognizer){
         
         self.performSegue(withIdentifier: "NextSegue", sender: nil)

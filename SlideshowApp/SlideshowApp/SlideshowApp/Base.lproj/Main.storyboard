@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -15,44 +15,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3NP-1D-1sF">
-                                <rect key="frame" x="353" y="670" width="61" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="6Md-qN-8U7"/>
-                                    <constraint firstAttribute="width" constant="61" id="qxL-We-NSV"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="進む"/>
-                                <connections>
-                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w34-nF-e5q"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAG-RG-AFd">
-                                <rect key="frame" x="176.5" y="670" width="61" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="再生"/>
-                                <connections>
-                                    <action selector="startstopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o3j-fZ-2AG"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flowers-21708_1920.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KbP-0L-TOg">
-                                <rect key="frame" x="60" y="44" width="294" height="428"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="277"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="428" id="p0l-XZ-9rn"/>
-                                    <constraint firstAttribute="width" constant="294" id="scP-yG-XDT"/>
+                                    <constraint firstAttribute="height" constant="277" id="FZm-NO-pyv"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="BcI-W8-A36" appends="YES" id="IXQ-HR-C5R"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycd-QN-CrS">
-                                <rect key="frame" x="0.0" y="670" width="61" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="61" id="EHb-g4-2p1"/>
-                                    <constraint firstAttribute="height" constant="48" id="owM-E6-PaX"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="dw1-y8-Zvb">
+                                <rect key="frame" x="162" y="374" width="51" height="42"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAG-RG-AFd">
+                                        <rect key="frame" x="0.0" y="0.0" width="51" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="再生"/>
+                                        <connections>
+                                            <action selector="startstopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o3j-fZ-2AG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3NP-1D-1sF">
+                                <rect key="frame" x="255" y="374" width="51" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="進む"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w34-nF-e5q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycd-QN-CrS">
+                                <rect key="frame" x="79" y="374" width="51" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <action selector="backButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sLY-D3-2mA"/>
@@ -62,20 +60,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KbP-0L-TOg" secondAttribute="trailing" constant="60" id="14f-mw-jh9"/>
-                            <constraint firstItem="3NP-1D-1sF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="626" id="EaA-aF-gI2"/>
-                            <constraint firstItem="ycd-QN-CrS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="626" id="MoA-BH-Od8"/>
-                            <constraint firstItem="ycd-QN-CrS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QeF-D8-rrR"/>
-                            <constraint firstItem="KbP-0L-TOg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bH1-dS-gQ3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ycd-QN-CrS" secondAttribute="bottom" constant="144" id="cYU-tx-2Rt"/>
-                            <constraint firstItem="cAG-RG-AFd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dus-YQ-CQS"/>
-                            <constraint firstItem="3NP-1D-1sF" firstAttribute="leading" secondItem="cAG-RG-AFd" secondAttribute="trailing" constant="115.5" id="hyY-ca-s7Q"/>
-                            <constraint firstItem="3NP-1D-1sF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="irJ-Ul-1EN"/>
-                            <constraint firstItem="cAG-RG-AFd" firstAttribute="top" secondItem="KbP-0L-TOg" secondAttribute="bottom" constant="198" id="kh4-qB-kbY"/>
-                            <constraint firstItem="KbP-0L-TOg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="mU5-2P-kDM"/>
-                            <constraint firstItem="KbP-0L-TOg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qEl-4j-zOW"/>
-                            <constraint firstItem="cAG-RG-AFd" firstAttribute="leading" secondItem="ycd-QN-CrS" secondAttribute="trailing" constant="115.5" id="rlM-N7-bBo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3NP-1D-1sF" secondAttribute="bottom" constant="144" id="y9W-Fm-qYU"/>
+                            <constraint firstItem="KbP-0L-TOg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K11-rs-wsi"/>
+                            <constraint firstItem="KbP-0L-TOg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gU6-wN-Ry5"/>
+                            <constraint firstAttribute="trailing" secondItem="KbP-0L-TOg" secondAttribute="trailing" id="tTL-p9-QZR"/>
+                            <constraint firstItem="KbP-0L-TOg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="tUK-e3-F0o"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
@@ -107,8 +95,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAJ-B0-gT3">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAJ-B0-gT3">
+                                <rect key="frame" x="176.66666666666666" y="17" width="61" height="48"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="戻る">
@@ -127,7 +115,12 @@
                             <constraint firstAttribute="bottom" secondItem="RgX-QA-ytg" secondAttribute="bottom" id="4Hk-Q9-myv"/>
                             <constraint firstItem="RgX-QA-ytg" firstAttribute="top" secondItem="GSG-HY-oTw" secondAttribute="top" id="4Q6-uz-yEO"/>
                             <constraint firstItem="MAJ-B0-gT3" firstAttribute="centerX" secondItem="xug-W9-HnF" secondAttribute="centerX" id="9UJ-Dh-ukJ"/>
+                            <constraint firstItem="RgX-QA-ytg" firstAttribute="trailing" secondItem="GSG-HY-oTw" secondAttribute="trailing" id="EtM-NH-P32"/>
+                            <constraint firstItem="RgX-QA-ytg" firstAttribute="top" secondItem="GSG-HY-oTw" secondAttribute="top" id="HqS-y6-lff"/>
+                            <constraint firstItem="RgX-QA-ytg" firstAttribute="leading" secondItem="GSG-HY-oTw" secondAttribute="leading" id="Ltq-JA-GNz"/>
+                            <constraint firstAttribute="bottom" secondItem="RgX-QA-ytg" secondAttribute="bottom" id="fSO-a7-2qx"/>
                             <constraint firstItem="RgX-QA-ytg" firstAttribute="leading" secondItem="xug-W9-HnF" secondAttribute="leading" id="iax-dL-bbP"/>
+                            <constraint firstItem="MAJ-B0-gT3" firstAttribute="centerX" secondItem="xug-W9-HnF" secondAttribute="centerX" id="mss-E1-AG4"/>
                             <constraint firstItem="RgX-QA-ytg" firstAttribute="trailing" secondItem="GSG-HY-oTw" secondAttribute="trailing" id="oEw-y6-r6A"/>
                             <constraint firstItem="MAJ-B0-gT3" firstAttribute="top" secondItem="GSG-HY-oTw" secondAttribute="top" constant="17" id="rw9-iu-jGw"/>
                         </constraints>
