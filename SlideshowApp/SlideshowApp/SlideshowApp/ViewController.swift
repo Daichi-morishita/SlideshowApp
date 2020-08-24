@@ -41,7 +41,12 @@ class ViewController: UIViewController {
         
         if self.timer != nil {
         self.timer.invalidate()   // タイマーを停止する
+        self.timer = nil
+        startstopButton.setTitle("再生", for: .normal)//停止ボタン
         
+        //ボタンの使用可能
+        nextButton.isEnabled = true
+        backButton.isEnabled = true
         }
             
         }
