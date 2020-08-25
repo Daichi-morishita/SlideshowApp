@@ -13,17 +13,17 @@ class ViewController: UIViewController {
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
     }    // タイマー
-       var timer: Timer!
-
-       // タイマー用の時間のための変数
-       var timer_sec: Float = 0
-
+    var timer: Timer!
+    
+    // タイマー用の時間のための変数
+    var timer_sec: Float = 0
+    
     
     let image1:UIImage = UIImage(named:"flowers-21708_1920.jpg")!
-       let image2:UIImage = UIImage(named:"sea-2730871_1920.jpg")!
-       let image3:UIImage = UIImage(named: "woman-5347089_1920.jpg")!
-     
-       var images: [UIImage] = []
+    let image2:UIImage = UIImage(named:"sea-2730871_1920.jpg")!
+    let image3:UIImage = UIImage(named: "woman-5347089_1920.jpg")!
+    
+    var images: [UIImage] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,23 +33,23 @@ class ViewController: UIViewController {
         
         slideshow.isUserInteractionEnabled = true
         
-       }
+    }
     //タップ時の処理
     @IBAction func tap(_ sender: Any) {
         
         self.performSegue(withIdentifier: "NextSegue", sender: nil)
         
         if self.timer != nil {
-        self.timer.invalidate()   // タイマーを停止する
-        self.timer = nil
-        startstopButton.setTitle("再生", for: .normal)//停止ボタン
-        
-        //ボタンの使用可能
-        nextButton.isEnabled = true
-        backButton.isEnabled = true
-        }
+            self.timer.invalidate()   // タイマーを停止する
+            self.timer = nil
+            startstopButton.setTitle("再生", for: .normal)//停止ボタン
             
+            //ボタンの使用可能
+            nextButton.isEnabled = true
+            backButton.isEnabled = true
         }
+        
+    }
     @objc  func tapped(_ sender: UITapGestureRecognizer){
         
         self.performSegue(withIdentifier: "NextSegue", sender: nil)
@@ -73,7 +73,7 @@ class ViewController: UIViewController {
     
     
     
-   
+    
     //ボタン系
     @IBOutlet weak var nextButton: UIButton!
     @IBAction func nextButton(_ sender: Any) {
@@ -98,7 +98,7 @@ class ViewController: UIViewController {
     @IBAction func startstopButton(_ sender: Any) {
         
         if self.timer == nil {
-             startstopButton.setTitle("停止", for: .normal)//再生ボタンの追加
+            startstopButton.setTitle("停止", for: .normal)//再生ボタンの追加
             self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
             
             //ボタンの使用不可
@@ -113,26 +113,26 @@ class ViewController: UIViewController {
             nextButton.isEnabled = true
             backButton.isEnabled = true
             
-
+            
         }
     }
     
     
     
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   // segueから遷移先のResultViewControllerを取得する
-    if segue.identifier == "NextSegue"{
-   let displayPhoto:photoViewController = segue.destination as! photoViewController
-   // 遷移先のResultViewControllerで宣言しているx, yに値を代入して渡す
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // segueから遷移先のResultViewControllerを取得する
+        if segue.identifier == "NextSegue"{
+            let displayPhoto:photoViewController = segue.destination as! photoViewController
+            // 遷移先のResultViewControllerで宣言しているx, yに値を代入して渡す
+            
+            displayPhoto.selectedImage = self.slideshow.image!
+        }
         
-        displayPhoto.selectedImage = self.slideshow.image!
+        
     }
-   
-    
-}
     
     
     
     
-  
+    
 }
